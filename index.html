@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolution Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #output {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Resolution Generator</h1>
+
+  <label for="diagnoseInput">Diagnose:</label>
+  <input type="text" id="diagnoseInput">
+
+  <label for="actionInput">Action:</label>
+  <input type="text" id="actionInput">
+
+  <label for="nextActionInput">Next Action:</label>
+  <input type="text" id="nextActionInput">
+
+  <label for="commentsInput">Comments:</label>
+  <input type="text" id="commentsInput">
+
+  <button onclick="generateResolution()">Generate Resolution</button>
+
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
