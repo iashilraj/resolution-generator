@@ -24,4 +24,15 @@ function generateResolution() {
     const year = date.getFullYear().toString().slice(-2);
     return `${day}/${month}/${year}`;
   }
+
+  function clearFields() {
+    // Clear input fields
+    document.getElementById('diagnoseInput').value = '';
+    document.getElementById('actionInput').value = '';
+    document.getElementById('nextActionInput').value = '';
+    document.getElementById('commentsInput').value = '';
+  
+    // Clear output
+    document.getElementById('output').innerHTML = '';
+  }
   

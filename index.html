@@ -44,6 +44,15 @@
       border: 1px solid #ddd;
       border-radius: 5px;
     }
+
+    #clearFieldsBtn {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
   </style>
   
 </head>
@@ -63,6 +72,7 @@
   <input type="text" id="commentsInput">
 
   <button onclick="generateResolution()">Generate Resolution</button>
+  <button id="clearFieldsBtn" onclick="clearFields()">Clear Fields</button>
 
   <div id="output"></div>
 
