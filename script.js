@@ -9,7 +9,7 @@ function generateResolution() {
   
     const resolutionOutput = `
       [AMS CSS] ${formattedDate} <br />
-      Diagnose: ${diagnose} <br />
+      Diagnosis: ${diagnose} <br />
       Action: ${action} <br />
       Next Action: ${nextAction} <br />
       Comments: ${comments}
@@ -45,6 +45,6 @@ function generateResolution() {
     tempTextArea.setSelectionRange(0, 99999);
     document.execCommand('copy');
     document.body.removeChild(tempTextArea);
-    
+
     alert('Resolution copied to clipboard!');
   }
