@@ -53,6 +53,16 @@
       border: none;
       cursor: pointer;
     }
+
+    #copyToClipboardBtn {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
   </style>
   
 </head>
@@ -75,6 +85,7 @@
   <button id="clearFieldsBtn" onclick="clearFields()">Clear Fields</button>
 
   <div id="output"></div>
+  <button id="copyToClipboardBtn" onclick="copyToClipboard()">Copy to Clipboard</button>
 
   <script src="script.js"></script>
 </body>

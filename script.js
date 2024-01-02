@@ -36,3 +36,15 @@ function generateResolution() {
     document.getElementById('output').innerHTML = '';
   }
   
+  function copyToClipboard() {
+    const outputText = document.getElementById('output').innerText;
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = outputText;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    tempTextArea.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    document.body.removeChild(tempTextArea);
+    
+    alert('Resolution copied to clipboard!');
+  }
