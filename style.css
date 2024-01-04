@@ -61,6 +61,7 @@ input[type=text]:hover{
 input[type=text]:focus{
     background-color: rgb(255, 255, 255);
     border-color: rgb(110, 109, 109);
+    outline: auto;
 }
 
 button {
@@ -169,6 +170,8 @@ body.dark-mode input:hover {
 
 body.dark-mode input:focus {
     background-color: #1e1f1f; 
+    outline: none;
+    border-color: #bdbdbd;
 }
 
 body.dark-mode input#includeDate {
