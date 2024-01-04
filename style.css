@@ -19,6 +19,11 @@ label {
     width: 100px;
 }
 
+label#checkBox {
+    width: auto;
+    margin-left: 5px;
+}
+
 input#includeDate {
     accent-color: #585757;
     width: auto;

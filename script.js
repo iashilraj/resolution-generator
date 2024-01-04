@@ -1,5 +1,10 @@
 // Load team name from storage on page load
 document.getElementById('teamInput').value = localStorage.getItem('teamName');
+
+const includeDateCheckbox = document.getElementById('includeDate');
+const savedIncludeDate = JSON.parse(localStorage.getItem('includeDate'));
+includeDateCheckbox.checked = savedIncludeDate === null ? true : savedIncludeDate;
+
 generateResolution();
 
 function generateResolution() {
@@ -80,3 +85,10 @@ if (isDarkMode) {
 
 const themeToggle = document.querySelector('.theme-toggle');
 themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+
+function saveIncludeDate() {
+  const includeDateState = includeDateCheckbox.checked;
+  localStorage.setItem('includeDate', JSON.stringify(includeDateState));
+}
+
+includeDateCheckbox.addEventListener('change', saveIncludeDate);
