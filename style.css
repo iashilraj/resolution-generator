@@ -110,6 +110,14 @@ button:hover {
     margin-top: 10px;
 }
 
+.tuv {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    color: #dadada;
+    font-size: x-small;
+}
+
 body.light-mode {
     background-color: #f4f4f4;
     color: #333;
@@ -144,4 +152,8 @@ body.dark-mode input, body.dark-mode #output {
 
 body.dark-mode input#includeDate {
     accent-color: #d0cece;
+}
+
+body.dark-mode .tuv {
+    color: #5a5a5a;
 }
