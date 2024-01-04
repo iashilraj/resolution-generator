@@ -47,7 +47,7 @@ input {
     border-width: 1px;
     border-style: solid;
     box-sizing: border-box;
-    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+    transition: background-color 0.1s ease-in-out 0s, border-color 0.1s ease-in-out 0s;
     padding: 12px 20px;
     margin: 5px 0;
     width: 70%;
