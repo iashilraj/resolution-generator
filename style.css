@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 h1 {
@@ -9,20 +10,32 @@ h1 {
 }
 
 label {
-    margin-top:8px;
-    display: block;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
     color: #333;
+    display: inline-block !important;
+    width: 100px;
+}
+
+input#includeDate {
+    accent-color: #5b6bef;
+    width: auto;
+    height: 1rem;
+    width: 1rem;
 }
 
 input {
-    width: 100%;
+    flex: 1;
     padding: 12px 20px;
     margin: 5px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    color: #333;
+    width: 70%;
 }
 
 button {
@@ -45,6 +58,9 @@ button:hover {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
+    text-align: left;
+    width: 50%;
+    margin: 20px auto 0px;
 }
 
 #clearFieldsBtn {

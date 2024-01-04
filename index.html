@@ -10,25 +10,22 @@
   <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
   <h1>Resolution Generator</h1>
   <label for="teamInput">Team:</label>
-  <input type="text" id="teamInput" placeholder="Please type your team name." oninput="saveTeamName()" required>
+  <input type="text" id="teamInput" placeholder="Please type your team name." oninput="saveTeamName()" required> <br />
 
   <label for="diagnoseInput">Diagnosis:</label>
-  <input type="text" id="diagnoseInput" placeholder="Type a value or keep it as N/A (default)">
+  <input type="text" id="diagnoseInput" placeholder="Type a value or keep it as N/A (default)"><br />
 
   <label for="actionInput">Action:</label>
-  <input type="text" id="actionInput" placeholder="Type a value or keep it as N/A (default)">
+  <input type="text" id="actionInput" placeholder="Type a value or keep it as N/A (default)"><br />
 
   <label for="nextActionInput">Next Action:</label>
-  <input type="text" id="nextActionInput" placeholder="Type a value or keep it as N/A (default)">
+  <input type="text" id="nextActionInput" placeholder="Type a value or keep it as N/A (default)"><br />
 
   <label for="commentsInput">Comments:</label>
-  <input type="text" id="commentsInput" placeholder="Type a value or keep it as N/A (default)">
+  <input type="text" id="commentsInput" placeholder="Type a value or keep it as N/A (default)"><br />
 
-  <label for="includeDate">Include Date:
-    <div id="includeDateContainer">
-      <input type="checkbox" id="includeDate" checked>
-    </div>
-  </label>
+  <label for="includeDate" id="checkBox">Include Date:</label>
+  <input type="checkbox" id="includeDate" checked><br />
 
   <button onclick="generateResolution()" type="submit">Generate Resolution</button>
   <button id="clearFieldsBtn" onclick="clearFields()">Clear Fields</button>
