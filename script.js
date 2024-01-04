@@ -92,14 +92,3 @@ function saveIncludeDate() {
 }
 
 includeDateCheckbox.addEventListener('change', saveIncludeDate);
-
-//count unique visitors
-if (!localStorage.getItem('visited')) {
-  let count = localStorage.getItem('visitCount') || 0;
-  count++;
-  localStorage.setItem('visitCount', count);
-  localStorage.setItem('visited', true);
-}
-
-const visitorCount = localStorage.getItem('visitCount') || 0;
-document.getElementById('tuvSpan').textContent="TUV: "+visitorCount;
