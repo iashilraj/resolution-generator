@@ -61,3 +61,22 @@ function copyToClipboard() {
     statusMessage.textContent = '';
   }, 1500);
 }
+
+// Theme
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+  const isDarkMode = body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDarkMode);
+
+  const themeToggle = document.querySelector('.theme-toggle');
+  themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+}
+
+const isDarkMode = JSON.parse(localStorage.getItem('darkMode'));
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+}
+
+const themeToggle = document.querySelector('.theme-toggle');
+themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
