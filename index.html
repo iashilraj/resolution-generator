@@ -4,82 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resolution Generator</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 20px;
-      background-color: #f4f4f4;
-    }
-  
-    h1 {
-      color: #333;
-    }
-  
-    label {
-      display: block;
-      margin-bottom: 5px;
-      color: #333;
-    }
-  
-    input {
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 8px;
-      box-sizing: border-box;
-    }
-  
-    button {
-      padding: 10px;
-      font-size: 16px;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  
-    #output {
-      margin-top: 20px;
-      padding: 15px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-
-    #clearFieldsBtn {
-      padding: 10px;
-      font-size: 16px;
-      background-color: #f44336;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    #copyToClipboardBtn {
-      padding: 10px;
-      font-size: 16px;
-      background-color: #2196F3;
-      color: white;
-      border: none;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-  </style>
-  
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Resolution Generator</h1>
 
+  <label for="teamInput">Team:</label>
+  <input type="text" id="teamInput" placeholder="Please type your team name." oninput="saveTeamName()">
+
   <label for="diagnoseInput">Diagnosis:</label>
-  <input type="text" id="diagnoseInput">
+  <input type="text" id="diagnoseInput" placeholder="Value is N/A by default">
 
   <label for="actionInput">Action:</label>
-  <input type="text" id="actionInput">
+  <input type="text" id="actionInput" placeholder="Value is N/A by default">
 
   <label for="nextActionInput">Next Action:</label>
-  <input type="text" id="nextActionInput">
+  <input type="text" id="nextActionInput" placeholder="Value is N/A by default">
 
   <label for="commentsInput">Comments:</label>
-  <input type="text" id="commentsInput">
+  <input type="text" id="commentsInput" placeholder="Value is N/A by default">
+
+  <label for="includeDate">Include Date:
+    <div id="includeDateContainer">
+      <input type="checkbox" id="includeDate" checked>
+    </div>
+  </label>
 
   <button onclick="generateResolution()">Generate Resolution</button>
   <button id="clearFieldsBtn" onclick="clearFields()">Clear Fields</button>
