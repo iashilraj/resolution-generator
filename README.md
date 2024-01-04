@@ -37,7 +37,7 @@ The application includes a theme toggle that enables users to switch between lig
 
 ## Contributing
 
-Feel free to contribute to the development of this project. If you have suggestions, bug reports, or feature requests, please [create an issue](https://github.com/yourusername/your-repository/issues).
+Feel free to contribute to the development of this project. If you have suggestions, bug reports, or feature requests, please [create an issue](https://github.com/iashilraj/resolution-generator/issues).
 
 ## License
 
