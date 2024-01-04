@@ -20,10 +20,17 @@ label {
 }
 
 input#includeDate {
-    accent-color: #5b6bef;
+    accent-color: #585757;
     width: auto;
     height: 1rem;
     width: 1rem;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
 }
 
 input {
@@ -128,4 +135,8 @@ body.dark-mode input, body.dark-mode #output {
     background-color: #292a2a;
     border: 1px solid #5b5b5b;
     color: aliceblue;
+}
+
+body.dark-mode input#includeDate {
+    accent-color: #d0cece;
 }
