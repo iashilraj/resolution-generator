@@ -39,15 +39,28 @@ input#includeDate {
 }
 
 input {
-    flex: 1;
+    background-color: rgb(250, 251, 252);
+    border-color: rgb(205 207 211);
+    color: #333;
+    cursor: text;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
     padding: 12px 20px;
     margin: 5px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #333;
     width: 70%;
+    outline: none;
+}
+
+input[type=text]:hover{
+    background-color: rgb(235, 236, 240);
+}
+
+input[type=text]:focus{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(110, 109, 109);
 }
 
 button {
@@ -148,6 +161,14 @@ body.dark-mode input, body.dark-mode #output {
     background-color: #292a2a;
     border: 1px solid #5b5b5b;
     color: aliceblue;
+}
+
+body.dark-mode input:hover {
+    background-color: #262727; 
+}
+
+body.dark-mode input:focus {
+    background-color: #1e1f1f; 
 }
 
 body.dark-mode input#includeDate {
