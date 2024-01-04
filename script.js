@@ -54,5 +54,10 @@ function copyToClipboard() {
   document.execCommand('copy');
   document.body.removeChild(tempTextArea);
 
-  alert('Resolution copied to clipboard!');
+  const statusMessage = document.getElementById('statusMessage');
+  statusMessage.textContent = 'Resolution copied to clipboard!';
+
+  setTimeout(() => {
+    statusMessage.textContent = '';
+  }, 1500);
 }
