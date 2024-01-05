@@ -13,16 +13,16 @@
   <input type="text" id="teamInput" placeholder="Team name" oninput="saveTeamName(); generateResolution()" required> <br />
 
   <label for="diagnoseInput">Diagnosis:</label>
-  <input type="text" id="diagnoseInput" placeholder="Diagnostics / Analysis that have been performed and their results ( default: N/A )" oninput="generateResolution()"><br />
+  <input type="text" id="diagnoseInput" placeholder="Diagnostics / Analysis that have been performed and their results ( default: N/A )" oninput="generateResolution()" onkeydown="handleEnterKey(event, 'diagnoseInput')"><br />
 
   <label for="actionInput">Action:</label>
-  <input type="text" id="actionInput" placeholder="Action taken / WA done and their results ( default: N/A )" oninput="generateResolution()"><br />
+  <input type="text" id="actionInput" placeholder="Action taken / WA done and their results ( default: N/A )" oninput="generateResolution()" onkeydown="handleEnterKey(event, 'actionInput')"><br />
 
   <label for="nextActionInput">Next Action:</label>
-  <input type="text" id="nextActionInput" placeholder="Next action needed to resolve fault ( default: N/A )" oninput="generateResolution()"><br />
+  <input type="text" id="nextActionInput" placeholder="Next action needed to resolve fault ( default: N/A )" oninput="generateResolution()" onkeydown="handleEnterKey(event, 'nextActionInput')"><br />
 
   <label for="commentsInput">Comments:</label>
-  <input type="text" id="commentsInput" placeholder="Comments and additional information ( default: N/A )" oninput="generateResolution()"><br />
+  <input type="text" id="commentsInput" placeholder="Comments and additional information ( default: N/A )" oninput="generateResolution()" onkeydown="handleEnterKey(event, 'commentsInput')"><br />
   
   <div class="checkboxContainer">
     <input type="checkbox" id="includeDate" checked onchange="saveIncludeDate(); generateResolution()">

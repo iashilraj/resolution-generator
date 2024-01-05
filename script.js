@@ -92,3 +92,15 @@ function saveIncludeDate() {
 }
 
 includeDateCheckbox.addEventListener('change', saveIncludeDate);
+
+function handleEnterKey(event, inputId) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    const inputElement = document.getElementById(inputId);
+    const cursorPosition = inputElement.selectionStart;
+    const inputValue = inputElement.value;
+    const updatedValue = inputValue.substring(0, cursorPosition) + '<br />' + inputValue.substring(cursorPosition);
+    inputElement.value = updatedValue;
+    inputElement.dispatchEvent(new Event('input'));
+  }
+}
