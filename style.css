@@ -64,6 +64,10 @@ input[type=text]:focus{
     outline: auto;
 }
 
+#includeDate {
+    cursor: auto;
+}
+
 button {
     padding: 10px;
     font-size: 16px;
