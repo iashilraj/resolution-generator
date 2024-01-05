@@ -10,32 +10,32 @@
   <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
   <h1>Resolution Generator</h1>
   <label for="teamInput">Team:</label>
-  <input type="text" id="teamInput" placeholder="Team name" oninput="saveTeamName()" required> <br />
+  <input type="text" id="teamInput" placeholder="Team name" oninput="saveTeamName(); generateResolution()" required> <br />
 
   <label for="diagnoseInput">Diagnosis:</label>
-  <input type="text" id="diagnoseInput" placeholder="Diagnostics / Analysis that have been performed and their results ( default: N/A )"><br />
+  <input type="text" id="diagnoseInput" placeholder="Diagnostics / Analysis that have been performed and their results ( default: N/A )" oninput="generateResolution()"><br />
 
   <label for="actionInput">Action:</label>
-  <input type="text" id="actionInput" placeholder="Action taken / WA done and their results ( default: N/A )"><br />
+  <input type="text" id="actionInput" placeholder="Action taken / WA done and their results ( default: N/A )" oninput="generateResolution()"><br />
 
   <label for="nextActionInput">Next Action:</label>
-  <input type="text" id="nextActionInput" placeholder="Next action needed to resolve fault ( default: N/A )"><br />
+  <input type="text" id="nextActionInput" placeholder="Next action needed to resolve fault ( default: N/A )" oninput="generateResolution()"><br />
 
   <label for="commentsInput">Comments:</label>
-  <input type="text" id="commentsInput" placeholder="Comments and additional information ( default: N/A )"><br />
+  <input type="text" id="commentsInput" placeholder="Comments and additional information ( default: N/A )" oninput="generateResolution()"><br />
   
   <div class="checkboxContainer">
-    <input type="checkbox" id="includeDate" checked>
+    <input type="checkbox" id="includeDate" checked onchange="saveIncludeDate(); generateResolution()">
     <label for="includeDate" id="checkBox">Include Today's Date</label>
   </div>
 
-  <button onclick="generateResolution()" type="submit">Generate Resolution</button>
+  <!-- <button onclick="generateResolution()" type="submit">Generate Resolution</button> -->
   <button id="clearFieldsBtn" onclick="clearFields()">Clear Fields</button>
 
   <div id="output"></div>
   <button id="copyToClipboardBtn" onclick="copyToClipboard()">Copy to Clipboard</button>
   <div id="statusMessage"></div>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
